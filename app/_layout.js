@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { Redirect, Slot, useRouter, useSegments } from "expo-router";
 import "../global.css"
 import { AuthContextProvider, useAuth } from '../context/authContext';
-
+import { MenuProvider } from 'react-native-popup-menu';
 
 const MainLayout = () => {
     const { isAuthencated } = useAuth();
@@ -16,9 +16,10 @@ const MainLayout = () => {
         if (isAuthencated && !inApp) {
             // redirect to home
             router.replace('home');
-        } else if( isAuthencated == false) {
+        } else if (isAuthencated == false) {
             // redirect to signIn   
-            router.replace('signIn');        }
+            router.replace('signIn');
+        }
 
     }, [isAuthencated])
 
@@ -29,9 +30,11 @@ const MainLayout = () => {
 
 export default function RootLayout() {
     return (
-        <AuthContextProvider>
-            <MainLayout />
-        </AuthContextProvider>
+        <MenuProvider>
+            <AuthContextProvider>
+                <MainLayout />
+            </AuthContextProvider>
+        </MenuProvider>
     )
 }
 
