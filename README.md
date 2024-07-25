@@ -2,7 +2,8 @@
 
 ![Frame 2](https://github.com/user-attachments/assets/74e12feb-e49f-4cfa-bf9e-6e423e9c1c7f)
 
-Home Stack Screen
+1. Home Stack Screen
+
 ![Frame 3](https://github.com/user-attachments/assets/af65232c-0424-4e3f-b406-497d31779c83)
 
 # Welcome to your Expo app 👋
