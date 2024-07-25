@@ -1,4 +1,10 @@
-# Some UI Screen
+# Some UI Screen 
+
+![Frame 2](https://github.com/user-attachments/assets/74e12feb-e49f-4cfa-bf9e-6e423e9c1c7f)
+
+Home Stack Screen
+
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
